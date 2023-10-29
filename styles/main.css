@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body .main-title {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 80px 40px 20px;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.product:hover {
+    transform: translate(0, -6px);
+}
+
+.products-list > .product {
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 320px;
+    background: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+    overflow: hidden;
+}
+
+.product .product-image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image_container > img {
+    max-height: 225px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-text_container {
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.product-text_container .product-price {
+    font-weight: 500;
+}
+
+.product-text_container .product-status {
+    font-weight: 300;
+    color: rgb(61, 210, 186);
+}

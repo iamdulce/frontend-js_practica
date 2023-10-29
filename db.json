@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "username": "dulce@kc.com",
+            "password": "$2b$10$vNffOt5/Usfaz8BjonEXsemUL9rxbtr7pTAmPvn1afuQndNMxx/Pu",
+            "id": 1
+        }
+    ],
+    "products": [
+        {
+            "image": "https://cb2.scene7.com/is/image/CB2/KMPolarTableLampSHS21/$web_pdp_main_carousel_sm$/210210135642/polar-table-lamp.jpg",
+            "name": "Lamp",
+            "description": "Small white lamp",
+            "price": "50",
+            "status": "on-sale"
+        },
+        {
+            "image": "https://cdn.laredoute.com/products/e/d/d/edd34fe9553f187b1df7586e13b76858.jpg?width=1200&dpr=1",
+            "name": "Night Table",
+            "description": "Wooden bedside table",
+            "price": "74",
+            "status": "on-sale"
+        },
+        {
+            "image": "https://m.media-amazon.com/images/I/61rFE093esL.__AC_SX300_SY300_QL70_ML2_.jpg",
+            "name": "Headsets",
+            "description": "Sony headsets",
+            "price": "40",
+            "status": "on-sale"
+        }
+    ]
+}

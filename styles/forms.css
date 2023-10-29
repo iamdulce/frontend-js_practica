@@ -1,4 +1,4 @@
-.signup-body {
+.form-page-body {
     display: flex;
     background: #253238;
     justify-content: center;
@@ -8,7 +8,7 @@
     height: 100vh;
 }
 
-.signup_container {
+.form_container {
     background-color: white;
     border-radius: 20px;
     color: #253238;
@@ -21,7 +21,7 @@
     justify-content: space-around;
 }
 
-.signup_container h3 {
+.form_container h3 {
     text-align: center;
     padding-bottom: 16px;
 }

@@ -1,11 +1,11 @@
-export const getProducts = async () => {
-    const url = "http://localhost:8000/api/products";
-    let data;
+export const getProduct = async id => {
+    const url = `http://localhost:8000/api/products/${id}`;
+    let productData;
 
     try {
         const response = await fetch(url);
         if (response.ok) {
-            data = await response.json();
+            productData = await response.json();
         } else {
             throw new Error("There was an error, please try again later");
         }
@@ -13,5 +13,5 @@ export const getProducts = async () => {
         throw error.message;
     }
 
-    return data;
+    return productData;
 };

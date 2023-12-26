@@ -1,5 +1,6 @@
 export const noAuthenticatedView = () => {
-    return `<ul>
+    return ` <span class="home-link"><a href="./index.html">Home</a></span>
+    <ul>
         <li>
             <a href="./login.html">Login</a>
             <a href="./signup.html">Signup</a>
@@ -8,8 +9,10 @@ export const noAuthenticatedView = () => {
 };
 
 export const authenticatedSessionView = () => {
-    return `<ul>
+    return ` <span class="home-link"><a href="./index.html">Home</a></span>
+    <ul>
         <li>
+            
             <a href="./product-creation.html">Add product</a>
             <button id="btn-logout">Log out</button>
         </li>

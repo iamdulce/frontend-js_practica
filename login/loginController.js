@@ -7,12 +7,10 @@ export const loginController = loginForm => {
         try {
             const { email, password } = getLoginData(loginForm);
 
-            if ((email, password)) {
-                const token = await loginUser(email, password);
-                alert("User logged in");
-                localStorage.setItem("token", token);
-                window.location = "./index.html";
-            }
+            const token = await loginUser(email, password);
+            alert("User logged in");
+            localStorage.setItem("token", token);
+            window.location = "./index.html";
         } catch (error) {
             alert(error);
         }

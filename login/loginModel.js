@@ -22,6 +22,9 @@ export const loginUser = async (email, password) => {
         if (!response.ok) {
             throw new Error(data.message);
         }
+        if (response.ok) {
+            return data.accessToken;
+        }
     } catch (error) {
         if (error.message) {
             throw error.message;

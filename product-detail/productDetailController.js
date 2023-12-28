@@ -24,7 +24,7 @@ const handleDeleteProduct = (product, productDetail) => {
     if (token) {
         const decodedUser = decodeToken(token);
 
-        if (product.useriId === decodedUser.useriId) {
+        if (product.user.username === decodedUser.username) {
             addDeleteProductBtn(product, productDetail);
         }
     }

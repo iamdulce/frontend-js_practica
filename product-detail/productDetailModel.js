@@ -1,5 +1,5 @@
 export const getProduct = async id => {
-    const url = `http://localhost:8000/api/products/${id}`;
+    const url = `http://localhost:8000/api/products/${id}?_expand=user`;
     let productData;
 
     try {

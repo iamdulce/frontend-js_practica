@@ -34,6 +34,7 @@ body .main-title {
 .nav-bar li {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .nav-bar .home-link a {
@@ -225,4 +226,10 @@ body .main-title {
     to {
         transform: rotate(360deg);
     }
+}
+
+.product-creation {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 40px;
 }

@@ -10,6 +10,7 @@ export const sessionController = nav => {
         logoutButton.addEventListener("click", () => {
             localStorage.removeItem("token");
             sessionController(nav);
+            window.location = "./index.html";
         });
     } else {
         nav.innerHTML = noAuthenticatedView();

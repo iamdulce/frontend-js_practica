@@ -19,13 +19,20 @@
         <section id="loader"></section>
         <form method="post" id="product-creation" class="product-creation">
             <label for="productName">Name:</label>
-            <input type="text" name="productName" id="productName" required />
+            <input
+                type="text"
+                name="productName"
+                id="productName"
+                placeholder="Name of the product"
+                required
+            />
 
             <label for="productDescription">Description:</label>
             <input
                 type="text"
                 name="productDescription"
                 id="productDescription"
+                placeholder="Tell us something about the product"
                 required
             />
 
@@ -34,7 +41,10 @@
                 type="number"
                 name="productPrice"
                 id="productPrice"
+                min="0"
+                max="10000"
                 required
+                placeholder="Cost of the product"
             />
 
             <label for="productImage">Image:</label>

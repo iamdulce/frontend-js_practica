@@ -32,7 +32,6 @@ export const deleteProduct = async (id, token) => {
             throw new Error(data.message);
         }
     } catch (error) {
-        console.log(error);
-        throw error;
+        throw error.message;
     }
 };

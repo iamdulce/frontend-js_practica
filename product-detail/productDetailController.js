@@ -19,7 +19,6 @@ export const productDetailController = async (productDetail, productId) => {
 
 const handleDeleteProduct = (product, productDetail) => {
     const token = localStorage.getItem("token");
-    console.log(token);
     if (token) {
         const decodedUser = decodeToken(token);
 

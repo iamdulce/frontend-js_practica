@@ -14,6 +14,7 @@ export const productCreationController = productCreationForm => {
 
         try {
             dispatchCustomEvent("startProductCreation", productCreationForm);
+
             await createProduct(
                 productName,
                 productDescription,

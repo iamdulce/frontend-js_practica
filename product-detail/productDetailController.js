@@ -9,7 +9,6 @@ export const productDetailController = async (productDetail, productId) => {
         const product = await getProduct(productId);
         productDetail.innerHTML = buildProduct(product);
         handleDeleteProduct(product, productDetail);
-        console.log(product); //Probando como traigo product
     } catch (error) {
         alert(error);
         window.location.href = "./index.html";

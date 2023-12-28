@@ -1,3 +1,4 @@
+import { dispatchCustomEvent } from "../utils/customEvent.js";
 import { loginUser } from "./loginModel.js";
 
 export const loginController = loginForm => {
@@ -5,6 +6,7 @@ export const loginController = loginForm => {
         event.preventDefault();
 
         try {
+            dispatchCustomEvent("startLogin", loginForm);
             const { email, password } = getLoginData(loginForm);
 
             const token = await loginUser(email, password);
@@ -13,6 +15,8 @@ export const loginController = loginForm => {
             window.location = "./index.html";
         } catch (error) {
             alert(error);
+        } finally {
+            dispatchCustomEvent("finishLogin", loginForm);
         }
     });
 };

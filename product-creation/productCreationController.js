@@ -1,3 +1,4 @@
+import { dispatchCustomEvent } from "../utils/customEvent.js";
 import { createProduct } from "./productCreationModel.js";
 
 export const productCreationController = productCreationForm => {
@@ -12,6 +13,7 @@ export const productCreationController = productCreationForm => {
         const productStatus = formData.get("productStatus");
 
         try {
+            dispatchCustomEvent("startProductCreation", productCreationForm);
             await createProduct(
                 productName,
                 productDescription,
@@ -23,6 +25,8 @@ export const productCreationController = productCreationForm => {
             window.location = "./index.html";
         } catch (error) {
             alert(error);
+        } finally {
+            dispatchCustomEvent("finishProductCreation", productCreationForm);
         }
     });
 };

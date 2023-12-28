@@ -5,6 +5,7 @@ export const signupController = signupForm => {
         event.preventDefault();
 
         try {
+            dispatchCustomEvent("startSigup", signupForm);
             const { email, password, passwordConfirmation } =
                 getSignupData(signupForm);
 
@@ -15,6 +16,8 @@ export const signupController = signupForm => {
             }
         } catch (error) {
             alert(error);
+        } finally {
+            dispatchCustomEvent("finishSignup", signupForm);
         }
     });
 };
